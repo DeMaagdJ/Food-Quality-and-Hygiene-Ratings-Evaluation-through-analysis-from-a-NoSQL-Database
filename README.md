@@ -13,7 +13,8 @@ The NoSQL_setup_starter.ipynb contains the architecture to setup and load the in
 
 After creating an instance of the Mongo Client within the notebook we assigned the database and collection to allow for further query.
 
-/Users/Justin/Desktop/Screenshot 2023-03-23 at 9.18.19 PM.png
+![Screenshot 2023-03-23 at 9 18 19 PM](https://user-images.githubusercontent.com/119906575/227427407-3dbe05ea-828c-4d8c-bf34-e3f484b68b81.png)
+
 
 In NoSQL_analysis_starter.ipynb we have several questions to be answered.  The queries were explored by utilizing the count_documents() to enumerate how many queried establishments exist.  The $gte and &lte functions were used to query data to find restaurants with a specified rating or, to localize establishments within a 0.01 degree from a local restaurant (Penang Flavours).  The queried data was transformed into a dataframe using pandas for readability. To answer question 4, a pipeline query was used to match the common hygiene score, group them by their Local Authorities, and sort in descending order.  A printout is provided in this readme file.
 
@@ -33,4 +34,4 @@ Answer: Howe and Co Fish and Chips - Van 17, Atlantic Fish Bar, Plumstead Manor 
 
 Answer: There are 55 documents that have a hygiene score of 0.
 	
-/Users/Justin/Desktop/Screenshot 2023-03-23 at 9.33.48 PM.png
+![Screenshot 2023-03-23 at 9 33 48 PM](https://user-images.githubusercontent.com/119906575/227427457-1812a085-dd7f-4720-8d50-eb7bffe0dcdf.png)
