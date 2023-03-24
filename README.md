@@ -9,14 +9,16 @@ Source (https://courses.bootcampspot.com/courses/2864/assignments/46383?module_i
 
 Methods:
 
-The NoSQL_setup_starter.ipynb contains the architecture to setup and load the information from establishments.json within jupyternotebook.  A document called Uk_food was created and the establishments.json was imported as a collection via MongoDB Compass.  The syntax to import the data via the terminal has been provided in the markdown for others to utilize the data. 
+The `NoSQL_setup_starter.ipynb` contains the architecture to setup and load the information from `establishments.json` within jupyter notebook.  A document called `Uk_food` was created and the `establishments.json` was imported as a collection via MongoDB Compass.  The syntax to import the data via the terminal has been provided in the markdown for others to utilize the data.
+
+````mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json````
 
 After creating an instance of the Mongo Client within the notebook we assigned the database and collection to allow for further query.
 
 ![Screenshot 2023-03-23 at 9 18 19 PM](https://user-images.githubusercontent.com/119906575/227427407-3dbe05ea-828c-4d8c-bf34-e3f484b68b81.png)
 
 
-In NoSQL_analysis_starter.ipynb we have several questions to be answered.  The queries were explored by utilizing the count_documents() to enumerate how many queried establishments exist.  The $gte and &lte functions were used to query data to find restaurants with a specified rating or, to localize establishments within a 0.01 degree from a local restaurant (Penang Flavours).  The queried data was transformed into a dataframe using pandas for readability. To answer question 4, a pipeline query was used to match the common hygiene score, group them by their Local Authorities, and sort in descending order.  A printout is provided in this readme file.
+In `NoSQL_analysis_starter.ipynb` we have several questions to be answered.  The queries were explored by utilizing the `count_documents()` to enumerate how many queried establishments exist.  The `$gte` and `&lte` functions were used to query data to find restaurants with a specified rating or, to localize establishments within a 0.01 degree from a local restaurant (Penang Flavours).  The queried data was transformed into a dataframe using pandas for readability. To answer question 4, a pipeline query was used to match the common hygiene score, group them by their Local Authorities, and sort in descending order.  A printout is provided in this readme file.
 
 1. Which establishments have a hygiene score equal to 20?
 
